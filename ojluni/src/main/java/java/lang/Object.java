@@ -42,6 +42,16 @@ public class Object {
     private transient Class<?> shadow$_klass_;
     private transient int shadow$_monitor_;
 
+    // Uncomment the following two fields to enable brooks pointers.
+    // Meant to do "#ifdef USE_BROOKS_POINTER ... #endif" but no macros.
+    //
+    // Note names use a 'x' prefix and the _x_rb_ptr_ field is of
+    // type int instead of Object to go with the alphabetical/by-type
+    // field order.
+    // private transient int shadow$_x_rb_ptr_;
+    // private transient int shadow$_x_xpadding_;
+
+
     /**
      * Returns the runtime class of this {@code Object}. The returned
      * {@code Class} object is the object that is locked by {@code
