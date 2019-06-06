@@ -52,6 +52,10 @@ public class Object {
     // private transient int shadow$_x_xpadding_;
 
 
+    private transient int shadow$_readCount_; //transient means not to serialize this field.
+    private transient int shadow$_writeCount_;
+
+
     /**
      * Returns the runtime class of this {@code Object}. The returned
      * {@code Class} object is the object that is locked by {@code
