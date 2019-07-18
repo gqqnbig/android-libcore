@@ -52,8 +52,10 @@ public class Object {
     // private transient int shadow$_x_xpadding_;
 
 
-    private transient int shadow$_readCount_; //transient means not to serialize this field.
-    private transient int shadow$_writeCount_;
+    private transient short shadow$readCount_; //transient means not to serialize this field.
+    private transient short shadow$writeCount_;
+    private transient short shadow$isInNvm_;
+    private transient short shadow$isInNvm_padding_2;
 
 
     /**
