@@ -148,6 +148,7 @@ class Thread implements Runnable {
      */
     private final Object lock = new Object();
 
+    //it's assigned in /art/runtime/thread.cc.
     private volatile long nativePeer;
 
     boolean started = false;
